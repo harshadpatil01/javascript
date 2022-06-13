@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [data-id^="hello"] {
+            color: red;
+            }
+
+            div ~ p {
+  color: red;
+}
+
+    </style>
+</head>
+<body>
+    <div>asdasd</div>
+    <script src="script.js"></script>
+
+    <!-- <div data-id="hello"> 
+        I will be matched, as this is an exact match 
+      </div>
+      <div data-id="hello-followed-by-hypen"> Select me as well </div>
+      <div data-id="hello-yes select also"> Yes, you read it right </div>
+      <div data-id="hell"> Nope, I won't be matched </div>
+      <div data-id="hello neither I will be"> Not selected </div> -->
+
+      <div>
+        <p> This won't be red </p>
+        <p> I am also not red </p>
+        <div></div>
+        <p> I am also not red </p>
+        <p> I am also not red </p>
+        <p> I am also not red </p>
+        <p> I am also not red </p>
+        <p> I am also not red </p>
+        <p> I am also not red </p>
+        <!-- <section> -->
+         <p> I am red </p>
+        
+         <p> I am red as well. </p>
+            <div></div>
+         <p> Surprise! I am also red. I am red because I am sibling of a div.
+         </p>
+         <p> Me too </div>
+        <!-- </section> -->
+        <p>
+         If you add a div at same level as of me all, I will also be red along with first two p above.
+        </p>
+        
+        <p>0000</p>
+      </div>
+</body>
+</html>
+
